@@ -11,6 +11,10 @@ LRequester::LRequester(const char *szURL)
     , m_pCURL(curl_easy_init())
 {
     assert(NULL != m_pCURL);
+    curl_easy_setopt(m_pCURL, CURLOPT_CONNECTTIMEOUT, 10L);
+    curl_easy_setopt(m_pCURL, CURLOPT_TIMEOUT, 10L);
+    curl_easy_setopt(m_pCURL, CURLOPT_ACCEPTTIMEOUT_MS, 10000L);
+    curl_easy_setopt(m_pCURL, CURLOPT_LOW_SPEED_TIME, 15L);
     curl_easy_setopt(m_pCURL, CURLOPT_URL, szURL);
     curl_easy_setopt(m_pCURL, CURLOPT_WRITEFUNCTION, CURLWriteCallback);
     curl_easy_setopt(m_pCURL, CURLOPT_WRITEDATA, (void *)this);
