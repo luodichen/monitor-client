@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\libjson">
+      <UniqueIdentifier>{5bd41e2e-b480-4536-b0b5-6a6fa0087ab4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\monitor-client.cpp">
@@ -21,10 +24,43 @@
     <ClCompile Include="..\src\LActivity.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\LRequester.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\lib_json\json_reader.cpp">
+      <Filter>源文件\libjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\lib_json\json_value.cpp">
+      <Filter>源文件\libjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\lib_json\json_writer.cpp">
+      <Filter>源文件\libjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LActiveRequest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\LActivity.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\LRequester.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\monitor-client.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LActiveRequest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\errcode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\export.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>
